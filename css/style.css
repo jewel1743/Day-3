@@ -1,0 +1,138 @@
+
+*{
+  box-sizing: border-box;
+}
+.col-1{ width: 8.33%; }
+.col-2{ width: 16.66%; }
+.col-3{ width: 25%; }
+.col-4{ width: 33.33%; }
+.col-5{ width: 41.66%; }
+.col-6{ width: 50%; }
+.col-7{ width: 58.33%; }
+.col-8{ width: 66.66%; }
+.col-9{ width: 75%; }
+.col-10{ width: 83.33%; }
+.col-11{ width: 91.66%; }
+.col-12{ width: 100%; }
+
+[class*="col-"]{
+  float: left;
+  border: 1px solid;
+}
+
+.row:after{
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.header-top-height{ height: 50px; }
+.header-height{ height: 200px; }
+.menu-height{ height: 50px; }
+.content-height{ height: 600px; }
+.big-footer-height{ height: 250px; }
+.footer-height{ height: 40px; }
+
+.main-ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-ul li{
+  float: left;
+  border: 1px solid grey;
+  }
+.main-ul li a{
+  text-decoration: none;
+  display: block;
+  padding: 15px 60px;
+  background-color: black;
+  color: white;
+  transition: 0.5s;
+}
+
+.main-ul li a:hover{
+  background-color: white;
+  color: black;
+}
+
+/*
+.box-one{
+  height: 200px;
+  width: 200px;
+  border-radius: 200px 0px 0px 0px;
+  background-color: red;
+  margin: 50px 0px 0px 50px;
+  */
+  /*shape two
+  .box-one{
+    height: 200px;
+    width: 200px;
+    transform: skewY(25deg);
+    background-color: red;
+    margin: 50px 0px 0px 50px;
+    float:left;
+}
+
+.box-two{
+  height: 200px;
+  width: 200px;
+  transform: skewY(-25deg);
+  background-color: red;
+  margin: 50px 0px 0px 10px;
+  float: left;
+}
+*/
+/* A shape
+.box-one{
+  height: 200px;
+  width: 20px;
+  transform: skewX(-30deg);
+  background-color: red;
+  margin: 50px 0px 0px 10px;
+  float:left;
+}
+
+.box-two{
+height: 200px;
+width: 20px;
+transform: skewX(30deg);
+background-color: red;
+margin: 50px 0px 0px 100px;
+float: left;
+}
+*/
+
+/* linear-gradient
+.box-one{
+  height: 200px;
+  width: 200px;
+  background: linear-gradient(to right top, red,orange,blue);
+  margin: 50px 0px 0px 50px;
+  float:left;
+}
+*/
+.box-one{
+  height: 200px;
+  width: 400px;
+  margin: 50px 0px 0px 50px;
+  float: left;
+  animation-name: jewel;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes jewel {
+  0% { background-image: url("../images/1.jpg"); transform: scale(1);}
+  25% { background-image: url("../images/2.jpg");transform: scale(1.5); }
+  50% { background-image: url("../images/3.jpg"); transform: scale(1);}
+  75% { background-image: url("../images/4.jpg"); transform: scale(1.5);}
+  100% { background-image: url("../images/5.jpg"); transform: scale(1);}
+
+}
